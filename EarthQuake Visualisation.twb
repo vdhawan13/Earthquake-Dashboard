@@ -1,0 +1,1798 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1108.0821                               -->
+<workbook original-version='18.1' source-build='2022.3.1 (20223.22.1108.0821)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='data_1+' inline='true' name='federated.1h5pfxe1fn786c1c58nr11hiije0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_1' name='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/DELL/Desktop/tableau project/data_1.csv' dataRefreshTime='' directory='C:/Users/DELL/Desktop/tableau project' filename='C:/Users/DELL/AppData/Local/Temp/TableauTemp/0zaxn4p0donnks1apj4dr1pd725j/data_1.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[data_1.csv].[F1]' />
+              <expression op='[data_4.csv].[F1]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[data_1.csv].[F1]' />
+                <expression op='[data_3.csv].[F1]' />
+              </expression>
+            </clause>
+            <relation join='inner' type='join'>
+              <clause type='join'>
+                <expression op='='>
+                  <expression op='[data_1.csv].[F1]' />
+                  <expression op='[data_2.csv].[F1]' />
+                </expression>
+              </clause>
+              <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_1.csv' table='[data_1#csv$]' type='table'>
+                <columns gridOrigin='A1:M3284:no:A1:M3284:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='country country' ordinal='1' />
+                  <column datatype='integer' name='day day' ordinal='2' />
+                  <column datatype='string' name='flag_tsunami flag_tsunami' ordinal='3' />
+                  <column datatype='integer' name='id id' ordinal='4' />
+                  <column datatype='string' name='location_name location_name' ordinal='5' />
+                  <column datatype='integer' name='month month' ordinal='6' />
+                  <column datatype='string' name='region_code region_code' ordinal='7' />
+                  <column datatype='string' name='Regions Regions' ordinal='8' />
+                  <column datatype='string' name='state state' ordinal='9' />
+                  <column datatype='integer' name='year year' ordinal='10' />
+                  <column datatype='real' name='Damage....Millions. Damage....Millions.' ordinal='11' />
+                  <column datatype='integer' name='damage_description damage_description' ordinal='12' />
+                </columns>
+              </relation>
+              <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_2.csv' table='[data_2#csv$]' type='table'>
+                <columns gridOrigin='A1:N3284:no:A1:N3284:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='id id' ordinal='1' />
+                  <column datatype='integer' name='deaths_description deaths_description' ordinal='2' />
+                  <column datatype='real' name='eq_mag_mb eq_mag_mb' ordinal='3' />
+                  <column datatype='real' name='eq_mag_mfa eq_mag_mfa' ordinal='4' />
+                  <column datatype='real' name='eq_mag_ml eq_mag_ml' ordinal='5' />
+                  <column datatype='real' name='eq_mag_ms eq_mag_ms' ordinal='6' />
+                  <column datatype='real' name='eq_mag_mw eq_mag_mw' ordinal='7' />
+                  <column datatype='real' name='eq_mag_unk eq_mag_unk' ordinal='8' />
+                  <column datatype='integer' name='focal_depth focal_depth' ordinal='9' />
+                  <column datatype='integer' name='hour hour' ordinal='10' />
+                  <column datatype='integer' name='houses_damaged houses_damaged' ordinal='11' />
+                  <column datatype='integer' name='houses_damaged_description houses_damaged_description' ordinal='12' />
+                  <column datatype='integer' name='houses_destroyed_description houses_destroyed_description' ordinal='13' />
+                </columns>
+              </relation>
+            </relation>
+            <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_3.csv' table='[data_3#csv$]' type='table'>
+              <columns gridOrigin='A1:N3284:no:A1:N3284:2'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='integer' name='id id' ordinal='1' />
+                <column datatype='integer' name='injuries_description injuries_description' ordinal='2' />
+                <column datatype='integer' name='Intensity Intensity' ordinal='3' />
+                <column datatype='real' name='latitude latitude' ordinal='4' />
+                <column datatype='real' name='longitude longitude' ordinal='5' />
+                <column datatype='real' name='Magnitude Magnitude' ordinal='6' />
+                <column datatype='integer' name='minute minute' ordinal='7' />
+                <column datatype='integer' name='missing_description missing_description' ordinal='8' />
+                <column datatype='integer' name='Number.of.deaths Number.of.deaths' ordinal='9' />
+                <column datatype='integer' name='Number.of.Houses.Destroyed Number.of.Houses.Destroyed' ordinal='10' />
+                <column datatype='integer' name='Number.of.Injuries Number.of.Injuries' ordinal='11' />
+                <column datatype='integer' name='Number.of.Missing.Persons Number.of.Missing.Persons' ordinal='12' />
+                <column datatype='integer' name='second second' ordinal='13' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_4.csv' table='[data_4#csv$]' type='table'>
+            <columns gridOrigin='A1:N3284:no:A1:N3284:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='id id' ordinal='1' />
+              <column datatype='integer' name='total_damage_description total_damage_description' ordinal='2' />
+              <column datatype='real' name='total_damage_millions_dollars total_damage_millions_dollars' ordinal='3' />
+              <column datatype='integer' name='total_deaths total_deaths' ordinal='4' />
+              <column datatype='integer' name='total_deaths_description total_deaths_description' ordinal='5' />
+              <column datatype='integer' name='total_houses_damaged total_houses_damaged' ordinal='6' />
+              <column datatype='integer' name='total_houses_damaged_description total_houses_damaged_description' ordinal='7' />
+              <column datatype='integer' name='total_houses_destroyed total_houses_destroyed' ordinal='8' />
+              <column datatype='integer' name='total_houses_destroyed_description total_houses_destroyed_description' ordinal='9' />
+              <column datatype='integer' name='total_injuries total_injuries' ordinal='10' />
+              <column datatype='integer' name='total_injuries_description total_injuries_description' ordinal='11' />
+              <column datatype='integer' name='total_missing total_missing' ordinal='12' />
+              <column datatype='integer' name='total_missing_description total_missing_description' ordinal='13' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[data_1.csv].[F1]' />
+              <expression op='[data_4.csv].[F1]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[data_1.csv].[F1]' />
+                <expression op='[data_3.csv].[F1]' />
+              </expression>
+            </clause>
+            <relation join='inner' type='join'>
+              <clause type='join'>
+                <expression op='='>
+                  <expression op='[data_1.csv].[F1]' />
+                  <expression op='[data_2.csv].[F1]' />
+                </expression>
+              </clause>
+              <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_1.csv' table='[data_1#csv$]' type='table'>
+                <columns gridOrigin='A1:M3284:no:A1:M3284:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='country country' ordinal='1' />
+                  <column datatype='integer' name='day day' ordinal='2' />
+                  <column datatype='string' name='flag_tsunami flag_tsunami' ordinal='3' />
+                  <column datatype='integer' name='id id' ordinal='4' />
+                  <column datatype='string' name='location_name location_name' ordinal='5' />
+                  <column datatype='integer' name='month month' ordinal='6' />
+                  <column datatype='string' name='region_code region_code' ordinal='7' />
+                  <column datatype='string' name='Regions Regions' ordinal='8' />
+                  <column datatype='string' name='state state' ordinal='9' />
+                  <column datatype='integer' name='year year' ordinal='10' />
+                  <column datatype='real' name='Damage....Millions. Damage....Millions.' ordinal='11' />
+                  <column datatype='integer' name='damage_description damage_description' ordinal='12' />
+                </columns>
+              </relation>
+              <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_2.csv' table='[data_2#csv$]' type='table'>
+                <columns gridOrigin='A1:N3284:no:A1:N3284:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='id id' ordinal='1' />
+                  <column datatype='integer' name='deaths_description deaths_description' ordinal='2' />
+                  <column datatype='real' name='eq_mag_mb eq_mag_mb' ordinal='3' />
+                  <column datatype='real' name='eq_mag_mfa eq_mag_mfa' ordinal='4' />
+                  <column datatype='real' name='eq_mag_ml eq_mag_ml' ordinal='5' />
+                  <column datatype='real' name='eq_mag_ms eq_mag_ms' ordinal='6' />
+                  <column datatype='real' name='eq_mag_mw eq_mag_mw' ordinal='7' />
+                  <column datatype='real' name='eq_mag_unk eq_mag_unk' ordinal='8' />
+                  <column datatype='integer' name='focal_depth focal_depth' ordinal='9' />
+                  <column datatype='integer' name='hour hour' ordinal='10' />
+                  <column datatype='integer' name='houses_damaged houses_damaged' ordinal='11' />
+                  <column datatype='integer' name='houses_damaged_description houses_damaged_description' ordinal='12' />
+                  <column datatype='integer' name='houses_destroyed_description houses_destroyed_description' ordinal='13' />
+                </columns>
+              </relation>
+            </relation>
+            <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_3.csv' table='[data_3#csv$]' type='table'>
+              <columns gridOrigin='A1:N3284:no:A1:N3284:2'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='integer' name='id id' ordinal='1' />
+                <column datatype='integer' name='injuries_description injuries_description' ordinal='2' />
+                <column datatype='integer' name='Intensity Intensity' ordinal='3' />
+                <column datatype='real' name='latitude latitude' ordinal='4' />
+                <column datatype='real' name='longitude longitude' ordinal='5' />
+                <column datatype='real' name='Magnitude Magnitude' ordinal='6' />
+                <column datatype='integer' name='minute minute' ordinal='7' />
+                <column datatype='integer' name='missing_description missing_description' ordinal='8' />
+                <column datatype='integer' name='Number.of.deaths Number.of.deaths' ordinal='9' />
+                <column datatype='integer' name='Number.of.Houses.Destroyed Number.of.Houses.Destroyed' ordinal='10' />
+                <column datatype='integer' name='Number.of.Injuries Number.of.Injuries' ordinal='11' />
+                <column datatype='integer' name='Number.of.Missing.Persons Number.of.Missing.Persons' ordinal='12' />
+                <column datatype='integer' name='second second' ordinal='13' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_4.csv' table='[data_4#csv$]' type='table'>
+            <columns gridOrigin='A1:N3284:no:A1:N3284:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='id id' ordinal='1' />
+              <column datatype='integer' name='total_damage_description total_damage_description' ordinal='2' />
+              <column datatype='real' name='total_damage_millions_dollars total_damage_millions_dollars' ordinal='3' />
+              <column datatype='integer' name='total_deaths total_deaths' ordinal='4' />
+              <column datatype='integer' name='total_deaths_description total_deaths_description' ordinal='5' />
+              <column datatype='integer' name='total_houses_damaged total_houses_damaged' ordinal='6' />
+              <column datatype='integer' name='total_houses_damaged_description total_houses_damaged_description' ordinal='7' />
+              <column datatype='integer' name='total_houses_destroyed total_houses_destroyed' ordinal='8' />
+              <column datatype='integer' name='total_houses_destroyed_description total_houses_destroyed_description' ordinal='9' />
+              <column datatype='integer' name='total_injuries total_injuries' ordinal='10' />
+              <column datatype='integer' name='total_injuries_description total_injuries_description' ordinal='11' />
+              <column datatype='integer' name='total_missing total_missing' ordinal='12' />
+              <column datatype='integer' name='total_missing_description total_missing_description' ordinal='13' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Damage....Millions. Damage....Millions.]' value='[data_1.csv].[Damage....Millions. Damage....Millions.]' />
+          <map key='[F1 (data_2.csv)]' value='[data_2.csv].[F1]' />
+          <map key='[F1 (data_3.csv)]' value='[data_3.csv].[F1]' />
+          <map key='[F1 (data_4.csv)]' value='[data_4.csv].[F1]' />
+          <map key='[F1]' value='[data_1.csv].[F1]' />
+          <map key='[Intensity Intensity]' value='[data_3.csv].[Intensity Intensity]' />
+          <map key='[Magnitude Magnitude]' value='[data_3.csv].[Magnitude Magnitude]' />
+          <map key='[Number.of.Houses.Destroyed Number.of.Houses.Destroyed]' value='[data_3.csv].[Number.of.Houses.Destroyed Number.of.Houses.Destroyed]' />
+          <map key='[Number.of.Injuries Number.of.Injuries]' value='[data_3.csv].[Number.of.Injuries Number.of.Injuries]' />
+          <map key='[Number.of.Missing.Persons Number.of.Missing.Persons]' value='[data_3.csv].[Number.of.Missing.Persons Number.of.Missing.Persons]' />
+          <map key='[Number.of.deaths Number.of.deaths]' value='[data_3.csv].[Number.of.deaths Number.of.deaths]' />
+          <map key='[Regions Regions]' value='[data_1.csv].[Regions Regions]' />
+          <map key='[country country]' value='[data_1.csv].[country country]' />
+          <map key='[damage_description damage_description]' value='[data_1.csv].[damage_description damage_description]' />
+          <map key='[day day]' value='[data_1.csv].[day day]' />
+          <map key='[deaths_description deaths_description]' value='[data_2.csv].[deaths_description deaths_description]' />
+          <map key='[eq_mag_mb eq_mag_mb]' value='[data_2.csv].[eq_mag_mb eq_mag_mb]' />
+          <map key='[eq_mag_mfa eq_mag_mfa]' value='[data_2.csv].[eq_mag_mfa eq_mag_mfa]' />
+          <map key='[eq_mag_ml eq_mag_ml]' value='[data_2.csv].[eq_mag_ml eq_mag_ml]' />
+          <map key='[eq_mag_ms eq_mag_ms]' value='[data_2.csv].[eq_mag_ms eq_mag_ms]' />
+          <map key='[eq_mag_mw eq_mag_mw]' value='[data_2.csv].[eq_mag_mw eq_mag_mw]' />
+          <map key='[eq_mag_unk eq_mag_unk]' value='[data_2.csv].[eq_mag_unk eq_mag_unk]' />
+          <map key='[flag_tsunami flag_tsunami]' value='[data_1.csv].[flag_tsunami flag_tsunami]' />
+          <map key='[focal_depth focal_depth]' value='[data_2.csv].[focal_depth focal_depth]' />
+          <map key='[hour hour]' value='[data_2.csv].[hour hour]' />
+          <map key='[houses_damaged houses_damaged]' value='[data_2.csv].[houses_damaged houses_damaged]' />
+          <map key='[houses_damaged_description houses_damaged_description]' value='[data_2.csv].[houses_damaged_description houses_damaged_description]' />
+          <map key='[houses_destroyed_description houses_destroyed_description]' value='[data_2.csv].[houses_destroyed_description houses_destroyed_description]' />
+          <map key='[id id (data_1.csv)]' value='[data_1.csv].[id id]' />
+          <map key='[id id (data_3.csv)]' value='[data_3.csv].[id id]' />
+          <map key='[id id (data_4.csv)]' value='[data_4.csv].[id id]' />
+          <map key='[id id]' value='[data_2.csv].[id id]' />
+          <map key='[injuries_description injuries_description]' value='[data_3.csv].[injuries_description injuries_description]' />
+          <map key='[latitude latitude]' value='[data_3.csv].[latitude latitude]' />
+          <map key='[location_name location_name]' value='[data_1.csv].[location_name location_name]' />
+          <map key='[longitude longitude]' value='[data_3.csv].[longitude longitude]' />
+          <map key='[minute minute]' value='[data_3.csv].[minute minute]' />
+          <map key='[missing_description missing_description]' value='[data_3.csv].[missing_description missing_description]' />
+          <map key='[month month]' value='[data_1.csv].[month month]' />
+          <map key='[region_code region_code]' value='[data_1.csv].[region_code region_code]' />
+          <map key='[second second]' value='[data_3.csv].[second second]' />
+          <map key='[state state]' value='[data_1.csv].[state state]' />
+          <map key='[total_damage_description total_damage_description]' value='[data_4.csv].[total_damage_description total_damage_description]' />
+          <map key='[total_damage_millions_dollars total_damage_millions_dollars]' value='[data_4.csv].[total_damage_millions_dollars total_damage_millions_dollars]' />
+          <map key='[total_deaths total_deaths]' value='[data_4.csv].[total_deaths total_deaths]' />
+          <map key='[total_deaths_description total_deaths_description]' value='[data_4.csv].[total_deaths_description total_deaths_description]' />
+          <map key='[total_houses_damaged total_houses_damaged]' value='[data_4.csv].[total_houses_damaged total_houses_damaged]' />
+          <map key='[total_houses_damaged_description total_houses_damaged_description]' value='[data_4.csv].[total_houses_damaged_description total_houses_damaged_description]' />
+          <map key='[total_houses_destroyed total_houses_destroyed]' value='[data_4.csv].[total_houses_destroyed total_houses_destroyed]' />
+          <map key='[total_houses_destroyed_description total_houses_destroyed_description]' value='[data_4.csv].[total_houses_destroyed_description total_houses_destroyed_description]' />
+          <map key='[total_injuries total_injuries]' value='[data_4.csv].[total_injuries total_injuries]' />
+          <map key='[total_injuries_description total_injuries_description]' value='[data_4.csv].[total_injuries_description total_injuries_description]' />
+          <map key='[total_missing total_missing]' value='[data_4.csv].[total_missing total_missing]' />
+          <map key='[total_missing_description total_missing_description]' value='[data_4.csv].[total_missing_description total_missing_description]' />
+          <map key='[year year]' value='[data_1.csv].[year year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country country]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>country country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day day]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>day day</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flag_tsunami flag_tsunami</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[flag_tsunami flag_tsunami]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>flag_tsunami flag_tsunami</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id id (data_1.csv)]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>id id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_name location_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location_name location_name]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>location_name location_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month month]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>month month</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region_code region_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[region_code region_code]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>region_code region_code</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regions Regions</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Regions Regions]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>Regions Regions</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state state]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>state state</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year year]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>year year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Damage....Millions. Damage....Millions.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Damage....Millions. Damage....Millions.]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>Damage....Millions. Damage....Millions.</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>damage_description damage_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[damage_description damage_description]</local-name>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias>damage_description damage_description</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M3284:no:A1:M3284:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>26063</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (data_2.csv)]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id id]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>id id</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deaths_description deaths_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deaths_description deaths_description]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>deaths_description deaths_description</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eq_mag_mb eq_mag_mb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eq_mag_mb eq_mag_mb]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>eq_mag_mb eq_mag_mb</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eq_mag_mfa eq_mag_mfa</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eq_mag_mfa eq_mag_mfa]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>eq_mag_mfa eq_mag_mfa</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eq_mag_ml eq_mag_ml</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eq_mag_ml eq_mag_ml]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>eq_mag_ml eq_mag_ml</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eq_mag_ms eq_mag_ms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eq_mag_ms eq_mag_ms]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>eq_mag_ms eq_mag_ms</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eq_mag_mw eq_mag_mw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eq_mag_mw eq_mag_mw]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>eq_mag_mw eq_mag_mw</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eq_mag_unk eq_mag_unk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eq_mag_unk eq_mag_unk]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>eq_mag_unk eq_mag_unk</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>focal_depth focal_depth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[focal_depth focal_depth]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>focal_depth focal_depth</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour hour]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>hour hour</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>houses_damaged houses_damaged</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[houses_damaged houses_damaged]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>houses_damaged houses_damaged</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>houses_damaged_description houses_damaged_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[houses_damaged_description houses_damaged_description]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>houses_damaged_description houses_damaged_description</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>houses_destroyed_description houses_destroyed_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[houses_destroyed_description houses_destroyed_description]</local-name>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias>houses_destroyed_description houses_destroyed_description</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N3284:no:A1:N3284:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>45948</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (data_3.csv)]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id id (data_3.csv)]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>id id</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>injuries_description injuries_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[injuries_description injuries_description]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>injuries_description injuries_description</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Intensity Intensity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Intensity Intensity]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>Intensity Intensity</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude latitude]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>latitude latitude</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude longitude]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>longitude longitude</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Magnitude Magnitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Magnitude Magnitude]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>Magnitude Magnitude</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minute minute</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minute minute]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>minute minute</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>missing_description missing_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[missing_description missing_description]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>missing_description missing_description</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number.of.deaths Number.of.deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number.of.deaths Number.of.deaths]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>Number.of.deaths Number.of.deaths</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number.of.Houses.Destroyed Number.of.Houses.Destroyed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number.of.Houses.Destroyed Number.of.Houses.Destroyed]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>Number.of.Houses.Destroyed Number.of.Houses.Destroyed</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number.of.Injuries Number.of.Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number.of.Injuries Number.of.Injuries]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>Number.of.Injuries Number.of.Injuries</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number.of.Missing.Persons Number.of.Missing.Persons</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number.of.Missing.Persons Number.of.Missing.Persons]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>Number.of.Missing.Persons Number.of.Missing.Persons</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>second second</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[second second]</local-name>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias>second second</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_3.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N3284:no:A1:N3284:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>45948</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (data_4.csv)]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id id (data_4.csv)]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>id id</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_damage_description total_damage_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_damage_description total_damage_description]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_damage_description total_damage_description</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_damage_millions_dollars total_damage_millions_dollars</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_damage_millions_dollars total_damage_millions_dollars]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_damage_millions_dollars total_damage_millions_dollars</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deaths total_deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_deaths total_deaths]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_deaths total_deaths</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deaths_description total_deaths_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_deaths_description total_deaths_description]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_deaths_description total_deaths_description</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_houses_damaged total_houses_damaged</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_houses_damaged total_houses_damaged]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_houses_damaged total_houses_damaged</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_houses_damaged_description total_houses_damaged_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_houses_damaged_description total_houses_damaged_description]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_houses_damaged_description total_houses_damaged_description</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_houses_destroyed total_houses_destroyed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_houses_destroyed total_houses_destroyed]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_houses_destroyed total_houses_destroyed</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_houses_destroyed_description total_houses_destroyed_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_houses_destroyed_description total_houses_destroyed_description]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_houses_destroyed_description total_houses_destroyed_description</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_injuries total_injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_injuries total_injuries]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_injuries total_injuries</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_injuries_description total_injuries_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_injuries_description total_injuries_description]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_injuries_description total_injuries_description</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_missing total_missing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_missing total_missing]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_missing total_missing</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_missing_description total_missing_description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_missing_description total_missing_description]</local-name>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias>total_missing_description total_missing_description</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_4.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N3284:no:A1:N3284:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>45948</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Day of Occurence' datatype='date' name='[Calculation_497929266394255360]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKEDATE([year year],[month month],[day day])' />
+      </column>
+      <column caption='Time of Occurence' datatype='datetime' name='[Calculation_497929266396442625]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKETIME([hour hour],[minute minute],[second second])' />
+      </column>
+      <column caption='Colour Ritcher' datatype='string' name='[Calculation_497929266401353730]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF (MAX([Magnitude Magnitude]) &gt;=0 AND MAX([Magnitude Magnitude])&lt;=2.9) then &quot;Micro&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=3.0 AND MAX([Magnitude Magnitude])&lt;=3.9) then &quot;Minor&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=4.0 AND MAX([Magnitude Magnitude])&lt;=4.9) then &quot;Light&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=5.0 AND MAX([Magnitude Magnitude])&lt;=5.9) then &quot;Moderate&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=6.0 AND MAX([Magnitude Magnitude])&lt;=6.9) then &quot;Strong&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=7.0 AND MAX([Magnitude Magnitude])&lt;=7.9) then &quot;Major&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=8.0 ) then &quot;Great&quot;&#13;&#10;END' />
+      </column>
+      <column caption='F1 (data 2.csv)' datatype='integer' name='[F1 (data_2.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (data 3.csv)' datatype='integer' name='[F1 (data_3.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (data 4.csv)' datatype='integer' name='[F1 (data_4.csv)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='data_1.csv' datatype='table' name='[__tableau_internal_object_id__].[data_1.csv_C8977005CF6644D58B0A6A5BA518C5B1]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Damage Description' datatype='integer' name='[damage_description]' role='measure' type='quantitative' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column caption='Deaths Description Deaths Description' datatype='integer' name='[deaths_description deaths_description]' role='measure' type='quantitative' />
+      <column caption='Eq Mag Mb Eq Mag Mb' datatype='real' name='[eq_mag_mb eq_mag_mb]' role='measure' type='quantitative' />
+      <column caption='Eq Mag Mfa Eq Mag Mfa' datatype='real' name='[eq_mag_mfa eq_mag_mfa]' role='measure' type='quantitative' />
+      <column caption='Eq Mag Ml Eq Mag Ml' datatype='real' name='[eq_mag_ml eq_mag_ml]' role='measure' type='quantitative' />
+      <column caption='Eq Mag Ms Eq Mag Ms' datatype='real' name='[eq_mag_ms eq_mag_ms]' role='measure' type='quantitative' />
+      <column caption='Eq Mag Mw Eq Mag Mw' datatype='real' name='[eq_mag_mw eq_mag_mw]' role='measure' type='quantitative' />
+      <column caption='Eq Mag Unk Eq Mag Unk' datatype='real' name='[eq_mag_unk eq_mag_unk]' role='measure' type='quantitative' />
+      <column caption='Flag Tsunami' datatype='string' name='[flag_tsunami]' role='dimension' type='nominal' />
+      <column caption='Focal Depth Focal Depth' datatype='integer' name='[focal_depth focal_depth]' role='measure' type='quantitative' />
+      <column caption='Hour Hour' datatype='integer' name='[hour hour]' role='measure' type='quantitative' />
+      <column caption='Houses Damaged Houses Damaged' datatype='integer' name='[houses_damaged houses_damaged]' role='measure' type='quantitative' />
+      <column caption='Houses Damaged Description Houses Damaged Description' datatype='integer' name='[houses_damaged_description houses_damaged_description]' role='measure' type='quantitative' />
+      <column caption='Houses Destroyed Description Houses Destroyed Description' datatype='integer' name='[houses_destroyed_description houses_destroyed_description]' role='measure' type='quantitative' />
+      <column caption='Id Id (Data 3.Csv)' datatype='integer' name='[id id (data_3.csv)]' role='dimension' type='ordinal' />
+      <column caption='Id Id (Data 4.Csv)' datatype='integer' name='[id id (data_4.csv)]' role='dimension' type='ordinal' />
+      <column caption='Id Id' datatype='integer' name='[id id]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Injuries Description Injuries Description' datatype='integer' name='[injuries_description injuries_description]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude Latitude' datatype='real' name='[latitude latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Location Name' datatype='string' name='[location_name]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude Longitude' datatype='real' name='[longitude longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Minute Minute' datatype='integer' name='[minute minute]' role='measure' type='quantitative' />
+      <column caption='Missing Description Missing Description' datatype='integer' name='[missing_description missing_description]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Region Code' datatype='string' name='[region_code]' role='dimension' type='nominal' />
+      <column caption='Second Second' datatype='integer' name='[second second]' role='measure' type='ordinal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Damage Description Total Damage Description' datatype='integer' name='[total_damage_description total_damage_description]' role='measure' type='quantitative' />
+      <column caption='Total Damage Millions Dollars Total Damage Millions Dollars' datatype='real' name='[total_damage_millions_dollars total_damage_millions_dollars]' role='measure' type='quantitative' />
+      <column caption='Total Deaths Total Deaths' datatype='integer' name='[total_deaths total_deaths]' role='measure' type='quantitative' />
+      <column caption='Total Deaths Description Total Deaths Description' datatype='integer' name='[total_deaths_description total_deaths_description]' role='measure' type='quantitative' />
+      <column caption='Total Houses Damaged Total Houses Damaged' datatype='integer' name='[total_houses_damaged total_houses_damaged]' role='measure' type='quantitative' />
+      <column caption='Total Houses Damaged Description Total Houses Damaged Description' datatype='integer' name='[total_houses_damaged_description total_houses_damaged_description]' role='measure' type='quantitative' />
+      <column caption='Total Houses Destroyed Total Houses Destroyed' datatype='integer' name='[total_houses_destroyed total_houses_destroyed]' role='measure' type='quantitative' />
+      <column caption='Total Houses Destroyed Description Total Houses Destroyed Description' datatype='integer' name='[total_houses_destroyed_description total_houses_destroyed_description]' role='measure' type='quantitative' />
+      <column caption='Total Injuries Total Injuries' datatype='integer' name='[total_injuries total_injuries]' role='measure' type='quantitative' />
+      <column caption='Total Injuries Description Total Injuries Description' datatype='integer' name='[total_injuries_description total_injuries_description]' role='measure' type='quantitative' />
+      <column caption='Total Missing Total Missing' datatype='integer' name='[total_missing total_missing]' role='measure' type='quantitative' />
+      <column caption='Total Missing Description Total Missing Description' datatype='integer' name='[total_missing_description total_missing_description]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[Calculation_497929266401353730]' derivation='User' name='[usr:Calculation_497929266401353730:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='country, state' />
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_497929266401353730:nk]' type='palette'>
+            <map to='#00aa00'>
+              <bucket>&quot;Micro&quot;</bucket>
+            </map>
+            <map to='#a70003'>
+              <bucket>&quot;Great&quot;</bucket>
+            </map>
+            <map to='#aaff00'>
+              <bucket>&quot;Minor&quot;</bucket>
+            </map>
+            <map to='#ff0000'>
+              <bucket>&quot;Major&quot;</bucket>
+            </map>
+            <map to='#ff5500'>
+              <bucket>&quot;Strong&quot;</bucket>
+            </map>
+            <map to='#ffaa00'>
+              <bucket>&quot;Moderate&quot;</bucket>
+            </map>
+            <map to='#ffff00'>
+              <bucket>&quot;Light&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data_1.csv' id='data_1.csv_C8977005CF6644D58B0A6A5BA518C5B1'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[data_1.csv].[F1]' />
+                    <expression op='[data_4.csv].[F1]' />
+                  </expression>
+                </clause>
+                <relation join='inner' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[data_1.csv].[F1]' />
+                      <expression op='[data_3.csv].[F1]' />
+                    </expression>
+                  </clause>
+                  <relation join='inner' type='join'>
+                    <clause type='join'>
+                      <expression op='='>
+                        <expression op='[data_1.csv].[F1]' />
+                        <expression op='[data_2.csv].[F1]' />
+                      </expression>
+                    </clause>
+                    <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_1.csv' table='[data_1#csv$]' type='table'>
+                      <columns gridOrigin='A1:M3284:no:A1:M3284:2'>
+                        <column datatype='integer' name='F1' ordinal='0' />
+                        <column datatype='string' name='country country' ordinal='1' />
+                        <column datatype='integer' name='day day' ordinal='2' />
+                        <column datatype='string' name='flag_tsunami flag_tsunami' ordinal='3' />
+                        <column datatype='integer' name='id id' ordinal='4' />
+                        <column datatype='string' name='location_name location_name' ordinal='5' />
+                        <column datatype='integer' name='month month' ordinal='6' />
+                        <column datatype='string' name='region_code region_code' ordinal='7' />
+                        <column datatype='string' name='Regions Regions' ordinal='8' />
+                        <column datatype='string' name='state state' ordinal='9' />
+                        <column datatype='integer' name='year year' ordinal='10' />
+                        <column datatype='real' name='Damage....Millions. Damage....Millions.' ordinal='11' />
+                        <column datatype='integer' name='damage_description damage_description' ordinal='12' />
+                      </columns>
+                    </relation>
+                    <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_2.csv' table='[data_2#csv$]' type='table'>
+                      <columns gridOrigin='A1:N3284:no:A1:N3284:2'>
+                        <column datatype='integer' name='F1' ordinal='0' />
+                        <column datatype='integer' name='id id' ordinal='1' />
+                        <column datatype='integer' name='deaths_description deaths_description' ordinal='2' />
+                        <column datatype='real' name='eq_mag_mb eq_mag_mb' ordinal='3' />
+                        <column datatype='real' name='eq_mag_mfa eq_mag_mfa' ordinal='4' />
+                        <column datatype='real' name='eq_mag_ml eq_mag_ml' ordinal='5' />
+                        <column datatype='real' name='eq_mag_ms eq_mag_ms' ordinal='6' />
+                        <column datatype='real' name='eq_mag_mw eq_mag_mw' ordinal='7' />
+                        <column datatype='real' name='eq_mag_unk eq_mag_unk' ordinal='8' />
+                        <column datatype='integer' name='focal_depth focal_depth' ordinal='9' />
+                        <column datatype='integer' name='hour hour' ordinal='10' />
+                        <column datatype='integer' name='houses_damaged houses_damaged' ordinal='11' />
+                        <column datatype='integer' name='houses_damaged_description houses_damaged_description' ordinal='12' />
+                        <column datatype='integer' name='houses_destroyed_description houses_destroyed_description' ordinal='13' />
+                      </columns>
+                    </relation>
+                  </relation>
+                  <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_3.csv' table='[data_3#csv$]' type='table'>
+                    <columns gridOrigin='A1:N3284:no:A1:N3284:2'>
+                      <column datatype='integer' name='F1' ordinal='0' />
+                      <column datatype='integer' name='id id' ordinal='1' />
+                      <column datatype='integer' name='injuries_description injuries_description' ordinal='2' />
+                      <column datatype='integer' name='Intensity Intensity' ordinal='3' />
+                      <column datatype='real' name='latitude latitude' ordinal='4' />
+                      <column datatype='real' name='longitude longitude' ordinal='5' />
+                      <column datatype='real' name='Magnitude Magnitude' ordinal='6' />
+                      <column datatype='integer' name='minute minute' ordinal='7' />
+                      <column datatype='integer' name='missing_description missing_description' ordinal='8' />
+                      <column datatype='integer' name='Number.of.deaths Number.of.deaths' ordinal='9' />
+                      <column datatype='integer' name='Number.of.Houses.Destroyed Number.of.Houses.Destroyed' ordinal='10' />
+                      <column datatype='integer' name='Number.of.Injuries Number.of.Injuries' ordinal='11' />
+                      <column datatype='integer' name='Number.of.Missing.Persons Number.of.Missing.Persons' ordinal='12' />
+                      <column datatype='integer' name='second second' ordinal='13' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation connection='textscan.0h0qlnb0chz0o518ur3nd1ew7qu2' name='data_4.csv' table='[data_4#csv$]' type='table'>
+                  <columns gridOrigin='A1:N3284:no:A1:N3284:2'>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='integer' name='id id' ordinal='1' />
+                    <column datatype='integer' name='total_damage_description total_damage_description' ordinal='2' />
+                    <column datatype='real' name='total_damage_millions_dollars total_damage_millions_dollars' ordinal='3' />
+                    <column datatype='integer' name='total_deaths total_deaths' ordinal='4' />
+                    <column datatype='integer' name='total_deaths_description total_deaths_description' ordinal='5' />
+                    <column datatype='integer' name='total_houses_damaged total_houses_damaged' ordinal='6' />
+                    <column datatype='integer' name='total_houses_damaged_description total_houses_damaged_description' ordinal='7' />
+                    <column datatype='integer' name='total_houses_destroyed total_houses_destroyed' ordinal='8' />
+                    <column datatype='integer' name='total_houses_destroyed_description total_houses_destroyed_description' ordinal='9' />
+                    <column datatype='integer' name='total_injuries total_injuries' ordinal='10' />
+                    <column datatype='integer' name='total_injuries_description total_injuries_description' ordinal='11' />
+                    <column datatype='integer' name='total_missing total_missing' ordinal='12' />
+                    <column datatype='integer' name='total_missing_description total_missing_description' ordinal='13' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Significant Earthquakes over 100 years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f28e2b' fontsize='20' underline='true'>Significant Earthquakes over 100 Years</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='14'>Hover Over Earthquakes for Details</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_1+' name='federated.1h5pfxe1fn786c1c58nr11hiije0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h5pfxe1fn786c1c58nr11hiije0'>
+            <column caption='Day of Occurence' datatype='date' name='[Calculation_497929266394255360]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='MAKEDATE([year year],[month month],[day day])' />
+            </column>
+            <column caption='Time of Occurence' datatype='datetime' name='[Calculation_497929266396442625]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='MAKETIME([hour hour],[minute minute],[second second])' />
+            </column>
+            <column caption='Colour Ritcher' datatype='string' name='[Calculation_497929266401353730]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF (MAX([Magnitude Magnitude]) &gt;=0 AND MAX([Magnitude Magnitude])&lt;=2.9) then &quot;Micro&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=3.0 AND MAX([Magnitude Magnitude])&lt;=3.9) then &quot;Minor&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=4.0 AND MAX([Magnitude Magnitude])&lt;=4.9) then &quot;Light&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=5.0 AND MAX([Magnitude Magnitude])&lt;=5.9) then &quot;Moderate&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=6.0 AND MAX([Magnitude Magnitude])&lt;=6.9) then &quot;Strong&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=7.0 AND MAX([Magnitude Magnitude])&lt;=7.9) then &quot;Major&quot;&#13;&#10;ELSEIF(MAX([Magnitude Magnitude]) &gt;=8.0 ) then &quot;Great&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[Magnitude Magnitude]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[day day]' role='measure' type='quantitative' />
+            <column datatype='string' name='[flag_tsunami flag_tsunami]' role='dimension' type='nominal' />
+            <column caption='Hour Hour' datatype='integer' name='[hour hour]' role='measure' type='quantitative' />
+            <column datatype='string' name='[location_name location_name]' role='dimension' type='nominal' />
+            <column caption='Minute Minute' datatype='integer' name='[minute minute]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[month month]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_497929266394255360]' derivation='None' name='[none:Calculation_497929266394255360:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_497929266396442625]' derivation='None' name='[none:Calculation_497929266396442625:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[flag_tsunami flag_tsunami]' derivation='None' name='[none:flag_tsunami flag_tsunami:nk]' pivot='key' type='nominal' />
+            <column-instance column='[location_name location_name]' derivation='None' name='[none:location_name location_name:nk]' pivot='key' type='nominal' />
+            <column caption='Second Second' datatype='integer' name='[second second]' role='measure' type='ordinal' />
+            <column-instance column='[Magnitude Magnitude]' derivation='Sum' name='[sum:Magnitude Magnitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year year]' derivation='Sum' name='[sum:year year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_497929266401353730]' derivation='User' name='[usr:Calculation_497929266401353730:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[year year]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1h5pfxe1fn786c1c58nr11hiije0].[usr:Calculation_497929266401353730:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Great&quot;</bucket>
+              <bucket>&quot;Major&quot;</bucket>
+              <bucket>&quot;Strong&quot;</bucket>
+              <bucket>&quot;Moderate&quot;</bucket>
+              <bucket>&quot;Light&quot;</bucket>
+              <bucket>&quot;Minor&quot;</bucket>
+              <bucket>&quot;Micro&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='rows' value='#ffffff' />
+            <format attr='stroke-color' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:Calculation_497929266396442625:ok]' value='*hh:mm:ss' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' scope='rows' value='#ffffff4b' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' value='#b4b4b4' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-color' value='#898989' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1h5pfxe1fn786c1c58nr11hiije0].[usr:Calculation_497929266401353730:nk]' />
+              <size column='[federated.1h5pfxe1fn786c1c58nr11hiije0].[sum:Magnitude Magnitude:qk]' />
+              <lod column='[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:location_name location_name:nk]' />
+              <text column='[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:Calculation_497929266394255360:qk]' />
+              <text column='[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:flag_tsunami flag_tsunami:nk]' />
+              <text column='[federated.1h5pfxe1fn786c1c58nr11hiije0].[usr:Calculation_497929266401353730:nk]' />
+              <text column='[federated.1h5pfxe1fn786c1c58nr11hiije0].[sum:Magnitude Magnitude:qk]' />
+              <lod column='[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:Calculation_497929266396442625:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Day of Occurence</run>
+                <run bold='true'> (dd-mm-yyyy)</run>
+                <run fontcolor='#787878'>:</run>
+                <run bold='true'><![CDATA[<[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:Calculation_497929266394255360:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Time of Occurence</run>
+                <run bold='true'><![CDATA[ (hh-mm-ss): <[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:Calculation_497929266396442625:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Location Name:&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Max. Magnitude:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1h5pfxe1fn786c1c58nr11hiije0].[sum:Magnitude Magnitude:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989'>Tsunami Generated</run>
+                <run bold='true' fontcolor='#555555'>:</run>
+                <run bold='true'><![CDATA[<[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:flag_tsunami flag_tsunami:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Category:</run>
+                <run bold='true'><![CDATA[<[federated.1h5pfxe1fn786c1c58nr11hiije0].[usr:Calculation_497929266401353730:nk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run>&#10;&lt;</run>
+                <run>[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:Calculation_497929266394255360:qk]</run>
+                <run>&gt;</run>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:flag_tsunami flag_tsunami:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.1h5pfxe1fn786c1c58nr11hiije0].[usr:Calculation_497929266401353730:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.1h5pfxe1fn786c1c58nr11hiije0].[sum:Magnitude Magnitude:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1h5pfxe1fn786c1c58nr11hiije0].[sum:Magnitude Magnitude:qk]</rows>
+        <cols>[federated.1h5pfxe1fn786c1c58nr11hiije0].[sum:year year:ok]</cols>
+      </table>
+      <simple-id uuid='{16EB5A52-907B-430E-BDE6-212F3A035511}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Significant Earthquakes over 100 years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1h5pfxe1fn786c1c58nr11hiije0].[usr:Calculation_497929266401353730:nk]' type='color' />
+            <card pane-specification-id='2' param='[federated.1h5pfxe1fn786c1c58nr11hiije0].[sum:Magnitude Magnitude:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:flag_tsunami flag_tsunami:nk]</field>
+            <field>[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:flag_tsunami:nk]</field>
+            <field>[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:location_name location_name:nk]</field>
+            <field>[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:location_name:nk]</field>
+            <field>[federated.1h5pfxe1fn786c1c58nr11hiije0].[none:year:qk]</field>
+            <field>[federated.1h5pfxe1fn786c1c58nr11hiije0].[usr:Calculation_497929266401353730:nk]</field>
+            <field>[federated.1h5pfxe1fn786c1c58nr11hiije0].[yr:Calculation_497929266394255360:ok]</field>
+            <field>[federated.1h5pfxe1fn786c1c58nr11hiije0].[yr:Calculation_497929266396442625:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D93A1491-8A01-4D07-8EB0-EC589C4B2386}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Significant Earthquakes over 100 years' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

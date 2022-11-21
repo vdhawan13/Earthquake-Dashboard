@@ -1,0 +1,32 @@
+file <- read.csv(file.choose())
+file
+colnames(file)
+
+data_1 <- file[ , c(1:12)]
+data_2 <- file[ , c(4,13:24)]
+data_3 <- file[ , c(4,25:36)]
+data_4 <- file[ , c(4,37:48)]
+colSums(is.na(data_1))
+colSums(is.na(data_2))
+colSums(is.na(data_3))
+colSums(is.na(data_4))
+
+misval = complete.cases(data_2$eq_mag_mb)
+mean_eq_mag_mb = mean(misval)
+data_2$eq_mag_mb[is.na(data_2$eq_mag_mb)] <- mean_eq_mag_mb
+
+install.packages("tidyr")
+library("tidyr")
+nrow(file)
+it=unique(file)
+nrow(it)
+
+write.csv(data_1,"data_1.csv", row.names = TRUE)
+write.csv(data_2,"data_2.csv", row.names = TRUE)
+write.csv(data_3,"data_3.csv", row.names = TRUE)
+write.csv(data_4,"data_4.csv", row.names = TRUE)
+
+read.csv("data_1.csv")
+read.csv("data_2.csv")
+read.csv("data_3.csv")
+read.csv("data_4.csv")
